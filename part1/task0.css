@@ -1,0 +1,26 @@
+:root {
+  --f-h1: 2.2rem;
+  --f-h2: 1.6rem;
+  --f-p: 1rem;
+  --line: 1.6;
+}
+body { padding: 1.25rem; }
+h1 { font-size: var(--f-h1); line-height: var(--line); margin: 0 0 0.5rem; }
+h2 { font-size: var(--f-h2); line-height: var(--line); margin: 1rem 0 0.5rem; }
+p  { font-size: var(--f-p);  line-height: 1.8; max-width: 70ch; }
+
+@media (min-width: 768px) {
+  :root {
+    --f-h1: 2.6rem;
+    --f-h2: 1.9rem;
+    --f-p: 1.05rem;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --f-h1: 3rem;
+    --f-h2: 2.1rem;
+    --f-p: 1.1rem;
+  }
+}

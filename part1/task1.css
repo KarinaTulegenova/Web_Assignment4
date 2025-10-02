@@ -1,0 +1,30 @@
+body { padding: 1.25rem; }
+h1 { margin: 0 0 1rem; }
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+.box {
+  background: #f2f2f2;
+  border: 1px solid #e0e0e0;
+  padding: 1.25rem;
+  border-radius: 12px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
